@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/Halaman_penerima.css">
+    <title>Halaman Penerima Query String</title>
+</head>
+<header>
+    <div class="container1">
+        <img src="assets/Itera.png" width="4%">
+        <h1>Halaman Penerima Query String</h1>
+        <ul>
+            <li><a href="Halaman_utama.html">Beranda</a></li>
+            <li><a href="Halaman_form.html">Formulir</a></li>
+            <li><a href="Halaman_tabel.html">Tabel</a></li>
+        </ul>
+    </div>
+</header> 
+<body>
+    <div class="sidenav">
+        <a href="https://www.linkedin.com/in/m-daffa-abiyyu-muhana-a834541a0/">Tentang saya</a><br>
+        <a href="http://wa.me/6289603468970">Kontak</a>
+    </div>
+
+    <div class="main">
+        <h2>Hasil Pendaftaran</h2>
+        <div id="result">
+            <p>Nama: <span id="nama"></span></p>
+            <p>NIM: <span id="nim"></span></p>
+            <p>Program Studi: <span id="prodi"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Password: <span id="password"></span></p>
+            <p>Jenis Kelamin: <span id="jenis_kelamin"></span></p>
+            <p>Tanggal Lahir: <span id="tgl_lahir"></span></p>
+            <p>Alamat: <span id="alamat"></span></p>
+        </div>
+    </div>
+</body>
+<footer>
+    &copy; 2023. Muhammad Daffa Abiyyu Muhana - 121140222
+</footer>
+<script>
+    // Mendapatkan nilai dari query string
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+
+    // Mendapatkan nilai-nilai parameter dari query string
+    var nama = urlParams.get('nama');
+    var nim = urlParams.get('nim');
+    var prodi = urlParams.get('prodi');
+    var email = urlParams.get('email');
+    var password = urlParams.get('password');
+    var jenis_kelamin = urlParams.get('jenis_kelamin');
+    var tgl_lahir = urlParams.get('tgl_lahir');
+    var alamat = urlParams.get('alamat');
+
+    // Menampilkan nilai-nilai di halaman
+    document.getElementById('nama').textContent = nama;
+    document.getElementById('nim').textContent = nim;
+    document.getElementById('prodi').textContent = prodi;
+    document.getElementById('email').textContent = email;
+    document.getElementById('password').textContent = password;
+    document.getElementById('jenis_kelamin').textContent = jenis_kelamin;
+    document.getElementById('tgl_lahir').textContent = tgl_lahir;
+    document.getElementById('alamat').textContent = alamat;
+</script>
+</html>

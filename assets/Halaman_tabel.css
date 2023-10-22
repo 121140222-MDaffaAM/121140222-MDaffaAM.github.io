@@ -1,0 +1,120 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #27bbe0;
+    justify-content: space-between;
+}
+
+.container1 a {
+    color: rgb(255, 255, 255);
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 10px;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+ 
+p {
+    text-align: justify;
+}
+
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #37ccaa;
+    overflow-x: hidden;
+    padding-top: 120px;
+}
+
+.sidenav img {
+    padding: 6px 8px 6px 16px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fffcfc;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-top: 45px;
+    margin-left: 180px;
+    font-size: 28px;
+    padding: 20px 30px;
+}
+
+#Data {
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#Data td, #Data th {
+    border: 1px solid #817070;
+    padding: 8px;
+}
+
+#Data td {
+    font-size: 25px;
+}
+
+#Data tr:nth-child(even) {
+    background-color: #a4ffe7;
+}
+
+#Data tr:hover {
+    background-color: #aec4d8;
+}
+
+#Data th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #52e4f7;
+    color: white;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #DDBC95;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
